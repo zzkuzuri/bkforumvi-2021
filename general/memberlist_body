@@ -1,0 +1,64 @@
+<div class="main">
+  	<div class="main-head">Tìm kiếm thành viên</div>
+  	<div class="main-content member-search">
+    		<form action="{S_MODE_ACTION}" method="get" class="form-frm">
+		<fieldset class="frm-set multi" style="margin:-5px -5px 0">
+			<dl>
+				<dt>{L_USER_SELECT}</dt>
+				<dd><input type="text" class="inputbox" name="username" maxlength="25" size="20" placeholder="Tên đầy đủ hoặc tìm theo chữ cái" value="{L_USER_SELECT_VALUE}" /></dd>
+			</dl>
+			<dl>
+				<dt>{L_SELECT_SORT_METHOD}</dt>
+				<dd>{S_MODE_SELECT}</dd>
+			</dl>
+			<dl>
+				<dt>{L_ORDER}</dt>
+				<dd>{S_ORDER_SELECT}</dd>
+			</dl>
+			<div class="clearfix"></div>
+			<div class="frm-buttons">
+				{S_HIDDEN_SID}
+				<input type="submit" name="submit" value="Chấp nhận" />
+			</div>
+		</fieldset>
+		</form>
+	</div>
+</div>
+
+<!-- BEGIN switch_pagination -->
+<div class="paged-head clearfix">
+	<p class="paging">{PAGINATION}</p>
+</div>
+<!-- END switch_pagination -->
+
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">Danh sách thành viên</h1>
+	</div>
+	<div class="member-list clearfix">
+		<!-- BEGIN memberrow -->
+		<div class="member-content">
+			<div class="table member-all">
+				<div class="table-cell member-avatar">
+					<a href="{memberrow.U_VIEWPROFILE}">{memberrow.AVATAR_IMG}</a>
+				</div>
+				<div class="table-cell member-info">
+					<p><a class="member-name" href="{memberrow.U_VIEWPROFILE}">{memberrow.USERNAME}</a></p>
+					<p><span class="label">Bài viết</span>: <strong>{memberrow.POSTS}</strong></p>
+					<p><span class="label">Tham gia</span>: <strong>{memberrow.JOINED}</strong></p>
+					<p><span class="label">Truy cập</span>: <strong>{memberrow.LASTVISIT}</strong></p>
+				</div>
+			</div>
+		</div>
+		<!-- END memberrow -->
+		<!-- BEGIN switch_no_user -->
+		{switch_no_user.L_NO_USER}
+		<!-- END switch_no_user -->
+	</div>
+</div>
+
+<!-- BEGIN switch_pagination -->
+<div class="paged-foot clearfix">
+	<p class="paging">{PAGINATION}</p>
+</div>
+<!-- END switch_pagination -->

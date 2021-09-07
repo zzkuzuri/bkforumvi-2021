@@ -1,0 +1,71 @@
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">Thông tin bài viết</h1>
+	</div>
+
+	<div class="main-content">
+		<fieldset class="frm-set">
+			<dl>
+				<dt><label>{L_SUBJECT} : </label></dt>
+				<dd>{SUBJECT}</dd>
+			</dl>
+			<dl>
+				<dt><label>Người đăng : </label></dt>
+				<dd>{POSTER}</dd>
+			</dl>
+			<dl>
+				<dt><label>{L_IP} : </label></dt>
+				<dd>{IP1} [ {IP2} ]</dd>
+			</dl>
+			<dl>
+				<dt><label>Ngày gửi : </label></dt>
+				<dd><span class="timez">{POSTED}</span></dd>
+			</dl>
+		</fieldset>
+	</div>
+</div>
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">{L_IP_INFO}</h1>
+	</div>
+
+	<div class="main-content frm">
+		<div class="frm-form">
+			<fieldset class="frm-set">
+					<dl>
+						<dt><label>{L_THIS_POST_IP} :</label></dt>
+						<dd>{IP} [ {POSTS} ] [ <a href="{U_LOOKUP_IP}">{L_LOOKUP_IP}</a> ]</dd>
+					</dl>
+			</fieldset>
+			<fieldset class="frm-set">
+					<dl>
+						<dt><label>{L_OTHER_USERS} :</label></dt>
+					<!-- BEGIN userrow -->
+						<dd><a href="{userrow.U_PROFILE}">{userrow.USERNAME}</a> [ {userrow.POSTS} ]<br /><a title="{userrow.L_SEARCH_POSTS}" href="{userrow.U_SEARCHPOSTS}">{userrow.L_SEARCH}</a></dd>
+					<!-- END userrow -->
+					</dl>
+			</fieldset>
+			<fieldset class="frm-set">
+					<dl>
+						<dt><label>Địa chỉ IP khác của thành viên này :</label></dt>
+					<!-- BEGIN iprow -->
+						<dd>{iprow.IP} [ {iprow.POSTS} ]</dd>
+					<!-- END iprow -->
+					</dl>
+			</fieldset>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">{L_PREVIEW}</h1>
+	</div>
+
+	<div class="main-content">
+		<div class="post-entry">
+			<div class="entry-content">
+				<p>{PREVIEW_NEW}</p>
+			</div>
+		</div>
+	</div>
+</div>

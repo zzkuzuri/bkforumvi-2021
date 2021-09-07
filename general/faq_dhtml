@@ -1,0 +1,30 @@
+<style type="text/css">
+.faq>dt{line-height:26px}
+.faq>dd{padding:10px;background:#323232;border-left:3px solid #3498db;margin:0 0 10px}
+.faq>dd:last-child{margin:0}
+</style>
+
+<script src="{U_CFAQ_JSLIB}" type="text/javascript"></script>
+
+<noscript>
+	<div class="message">
+		<p class="center">{L_CFAQ_NOSCRIPT}</p>
+	</div>
+</noscript>
+
+<!-- BEGIN faq_block -->
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">{faq_block.BLOCK_TITLE}</h1>
+	</div>
+
+	<dl class="faq main-content">
+		<!-- BEGIN faq_row -->
+ 		<dt onclick="return CFAQ.display('faq_a_{faq_block.faq_row.U_FAQ_ID}', false);">
+			<a href="javascript:void(0)" onclick="return CFAQ.display('faq_a_{faq_block.faq_row.U_FAQ_ID}', true);" onfocus="this.blur();">{faq_block.faq_row.FAQ_QUESTION}</a>
+ 		</dt>
+		<dd style="display:none;" id="faq_a_{faq_block.faq_row.U_FAQ_ID}"><p>{faq_block.faq_row.FAQ_ANSWER}</p></dd>
+		<!-- END faq_row -->
+	</dl>
+</div>
+<!-- END faq_block -->

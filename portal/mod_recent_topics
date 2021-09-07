@@ -1,0 +1,23 @@
+<div class="main">
+	<div class="main-head">
+		<h2>Bài viết mới nhất</h2><i class="fa fa-repeat reload-last"></i>
+	</div>
+	<div class="main-content last-content last-topic">
+		<div class="last-itemt">
+			<ol>
+				<!-- BEGIN classical_row -->
+				<!-- BEGIN recent_topic_row -->
+				<li class="table">
+					<!-- BEGIN switch_poster -->
+					<div class="table-cell last-title"><a href="{classical_row.recent_topic_row.U_TITLE}" title="{classical_row.recent_topic_row.L_TITLE}" class="topictitle">{classical_row.recent_topic_row.L_TITLE}</a></div>
+					<!-- END switch_poster -->
+					<!-- BEGIN switch_poster -->
+					<div class="table-cell last-user"><a href="{classical_row.recent_topic_row.switch_poster.U_POSTER}">{classical_row.recent_topic_row.switch_poster.S_POSTER}</a></div>
+					<!-- END switch_poster -->
+				</li>
+				<!-- END recent_topic_row -->
+				<!-- END classical_row -->
+			</ol>
+		</div>
+	</div>
+</div>

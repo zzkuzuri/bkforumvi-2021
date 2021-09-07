@@ -1,0 +1,55 @@
+<div class="col-left left">
+	<div class="side-main">
+		<div class="side-head">Lưu ý trước khi đăng ký</div>
+		<div class="side-content">
+			<p><strong style="color:red">Không</strong> đặt tên tài khoản theo tên của danh nhân, tên của các vị lãnh đạo trong và ngoài nước.</p><br/>
+			<p><strong style="color:red">Không</strong> đặt tên tài khoản có ý nghĩa không lành mạnh, thô tục, gây phản cảm.</p><br/>
+			<p><strong style="color:red">Không</strong> đặt tên tài khoản giả mạo thành viên trong Ban quản trị diễn đàn.</p><br/>
+			<p>Tài khoản vi phạm quy định về đặt tên sẽ bị <strong style="color:red">khóa vĩnh viễn</strong> mà không cần thông báo, đồng thời toàn bộ bài đăng của tài khoản này đều bị xóa khỏi hệ thống.</p><br/>
+			<p class="center"><a target="_blank" href="/">Quy định chung</a></p>
+		</div>
+	</div>
+</div>
+<div class="side-col right">
+	<div class="col-right">
+		<div class="main">
+			<form action="/register?step=2&agreement=1&privacy=1" method="post" name="post" id="ucp">
+				<div class="main-head">
+					<div class="subtitle">Thông tin đăng ký</div>
+				</div>
+				<div class="main-content frm">
+					<p class="frm-info">Bạn phải khai báo đầy đủ các mục có đánh dấu *.</p>
+					<fieldset class="frm-set multi">
+						<dl>
+							<dt><label>Tên tài khoản : *</label></dt>
+							<dd>
+								<input type="text" id="username_reg" name="username" value="" size="25" maxlength="16" />
+								<span class="explain">Tài khoản không được ít hơn 3 kí tự và không vượt quá 16 ký tự.</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Địa chỉ Email : *</label></dt>
+							<dd>
+								<input class="ltr" type="text" id="email" name="email" value="" size="25" maxlength="64" />
+								<span class="explain">Bạn cần sử dụng Email này trong trường hợp quên mật khẩu.</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Mật khẩu : *</label></dt>
+							<dd>
+								<input class="left ltr" type="password" id="password_reg" name="password" value="" size="25" maxlength="25" />
+								<span class="explain">Nên đặt mặt khẩu có cả chữ và số để đảm bảo an toàn tuyệt đối.</span>
+							</dd>
+						</dl>
+					</fieldset>
+					<fieldset class="frm-set">
+						<dl class="frm-buttons">
+							<dt>&nbsp;</dt>
+							<dd><input class="button2" type="submit" name="submit" value="Chấp nhận" /><input class="button2" type="reset" name="reset" value="Xác lập lại" /></dd>
+						</dl>
+					</fieldset>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

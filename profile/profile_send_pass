@@ -1,0 +1,30 @@
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">Quên mật khẩu</h1>
+	</div>
+	<div class="main-content frm">
+		<form action="{S_PROFILE_ACTION}" method="post">
+			<ul class="frm-info">
+				<li>{L_ITEMS_REQUIRED}</li>
+			</ul>
+			<fieldset class="frm-set">
+				<dl>
+					<dt><label>{L_USERNAME} : *</label></dt>
+					<dd><input class="inputbox" type="text" name="username" value="{USERNAME}" /></dd>
+				</dl>
+				<dl>
+					<dt><label>{L_EMAIL_ADDRESS} : *</label></dt>
+					<dd><input class="inputbox" type="text" name="email" value="{EMAIL}" /></dd>
+				</dl>
+
+				<dl class="frm-buttons">
+					<dd style="padding:0">
+						{S_HIDDEN_FIELDS}
+						<input class="button2" type="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+						<input class="button2" type="reset" name="reset" value="{L_RESET}" />
+					</dd>
+				</dl>
+			</fieldset>
+		</form>
+	</div>
+</div>

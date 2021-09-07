@@ -1,0 +1,3 @@
+<div class="tips-red">
+	<p class="center">{ERROR_MESSAGE}</p>
+</div>

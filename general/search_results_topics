@@ -1,0 +1,43 @@
+<div class="paged-head clearfix">
+	<p class="paging">{PAGINATION}</p>
+</div>
+
+<div class="main paged">
+<form action="{S_ACTION}" method="post" name="post" onsubmit="return verify_select();" class="frm-form">
+
+	<div class="main-head">
+		<h1 class="page-title">{L_SEARCH_MATCHES}</h1>
+	</div>
+	<div class="main-content">
+		<ul class="list-main">
+			<!-- BEGIN searchresults -->
+			<li class="table list-content" data="{searchresults.TOPIC_TYPE}">
+				<div class="table-cell list-icon"><i class="fa fa-comment-o"></i></div>
+				<div class="table-cell list-info">
+					<div class="list-name"><h2 class="topic-title"><a class="topictitle" href="{searchresults.U_VIEW_TOPIC}">{searchresults.TOPIC_TITLE}</a></h2></div>
+					<div class="list-author">{searchresults.TOPIC_AUTHOR}, <span class="timez">{searchresults.FIRST_POST_TIME}</span>&nbsp; <i class="fa fa-tag"></i> <a href="{searchresults.U_VIEW_FORUM}">{searchresults.FORUM_NAME}</a><span class="list-page">{searchresults.GOTO_PAGE}</span></div>
+				</div>
+				<div class="table-cell list-count">
+					<div>
+						<strong>{searchresults.REPLIES}</strong><br />
+						<span>Bình luận</span>
+					</div>
+					<div>
+						<strong>{searchresults.VIEWS}</strong><br />
+						<span>Lượt xem</span>
+					</div>
+				</div>
+				<div class="table-cell list-last">
+                            		{searchresults.LAST_POST_AUTHOR}<br/>
+                            		<span class="timez">{searchresults.LAST_POST_TIME}</span>
+				</div>
+			</li>
+			<!-- END searchresults -->
+		</ul>
+	</div>
+</form>
+</div>
+
+<div class="paged-head clearfix">
+	<p class="paging">{PAGINATION}</p>
+</div>

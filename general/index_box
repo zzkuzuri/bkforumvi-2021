@@ -1,0 +1,41 @@
+<!-- BEGIN giefmod_index1 -->
+    {giefmod_index1.MODVAR}
+<!-- END giefmod_index1 -->
+
+<!-- BEGIN catrow -->
+<!-- BEGIN tablehead -->
+<div class="main main-box box{catrow.tablehead.ID}">
+	<div class="main-head ">
+		<div class="page-title">{catrow.tablehead.L_FORUM}</div>
+		<a href="/{catrow.tablehead.ID}-category"><i class="fa fa-chevron-right"></i></a>
+	</div>
+	<div class="index-box">
+		<ul class="clearfix" style="margin:-5px">
+			<!-- END tablehead -->
+
+			<!-- BEGIN forumrow -->
+			<li class="box-content">
+				<div class="box-all">
+                                  	<div class="box-info">
+						<div class="box-icon"><i class="fa"></i></div>
+						<div class="box-name">
+							<h3><a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a></h3>
+						</div>
+						<div class="box-last">
+							Mới nhất : <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a>
+						</div>
+					</div>
+					<div class="box-count">
+						<span>Chủ đề : <strong>{catrow.forumrow.TOPICS}</strong></span>
+						<span>Bài viết : <strong>{catrow.forumrow.POSTS}</strong></span>
+					</div>
+				</div>
+			</li>
+			<!-- END forumrow -->
+
+			<!-- BEGIN tablefoot -->
+		</ul>
+	</div>
+</div>
+<!-- END tablefoot -->
+<!-- END catrow -->

@@ -1,0 +1,56 @@
+<div class="side-col right">
+	<div class="col-right">
+		{JAVASCRIPT}
+		{CHATBOX_TOP}
+		{BOARD_INDEX}
+		{CHATBOX_BOTTOM}
+		{AUTO_DST}
+	</div>
+</div>
+
+<div class="col-left left">
+  
+	<div class="side-main sgt">
+		<div class="side-head">
+			<h3><i class="fa fa-star"></i> Những điều cần lưu ý</h3>
+		</div>
+		<div class="side-content">
+                  <p><i class="fa fa-check"></i>Từ ngày 30/06/2021 chuyển mọi hoạt động của diễn đàn sang địa chỉ vc-mp.vn.</p>
+		</div>
+		<div class="side-foot">
+                  <a class="button" href="https://vc-mp.vn/">Diễn đàn mới</a>
+		</div>
+	</div>
+	<div class="side-main">
+		<div class="side-head">
+			<h3>Thành viên đang trực tuyến</h3>
+		</div>
+		<div class="side-content" style="line-height:1.5">
+			<p style="margin:0 0 10px;padding:0 0 10px;border-bottom:1px dashed #464646">{LOGGED_IN_USER_LIST}</p>
+			<p>{TOTAL_USERS_ONLINE}</p>
+		</div>
+	</div>
+	<div class="side-main">
+		<div class="side-head">
+			<h3>Thống kê diễn đàn</h3>
+		</div>
+		<div class="side-content">
+			<!-- BEGIN message_admin_index -->
+			<!-- BEGIN message_admin_txt -->
+			{message_admin_index.message_admin_txt.MES_TXT}
+			<!-- END message_admin_txt -->
+			<!-- END message_admin_index -->
+		</div>
+	</div>
+	<div class="side-main">
+		<div class="side-head">
+			<h3>Liên kết chung</h3>
+		</div>
+		<div class="side-content" style="line-height:1.5">
+                    	<p>IP Server: vc-mp.vn</p>
+                        <p>Fanpage: <a href="https://www.facebook.com/vicecityonline/" target="_blank">fb.com/vicecityonline</a></p>
+			<p>Groups: <a href="https://www.facebook.com/groups/bkserver/" target="_blank">fb.com/groups/bkserver</a></p>
+                  	<p>Discord: <a href="#" target="_blank">Dang update</a></p>
+          	</div>
+	</div>
+</div>

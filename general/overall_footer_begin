@@ -1,0 +1,62 @@
+<!-- BEGIN html_validation -->
+<div>
+	<div>
+		<div>
+			<div><div><div><div>
+				<div>
+					<div>
+						<div>
+							<div>
+<!-- END html_validation -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div></div></div></div>
+			<div id="{ID_RIGHT}">
+				<!-- BEGIN giefmod_index2 -->
+				{giefmod_index2.MODVAR}
+				<!-- BEGIN saut -->
+				<div style="height:{SPACE_ROW}px"></div>
+				<!-- END saut -->
+				<!-- END giefmod_index2 -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- BEGIN switch_user_logged_out -->
+<form action="/login" method="post" name="form_login" class="log-pop" style="display:none">
+	<div class="log-title">Đăng nhập<i class="fa fa-close right"></i></div>
+	<div class="log-body">
+		<div class="log-item">
+			<input class="logreg-name" name="username" placeholder="Tên tài khoản" type="text" />
+		</div>
+		<div class="log-item">
+			<input name="password" placeholder="Mật khẩu" type="password" />
+		</div>
+		<div class="log-item clearfix">
+			<p class="left"><input type="checkbox" name="autologin" tabindex="3" class="checkbox" checked="checked" /> Ghi nhớ</p>
+			<p class="right"><a href="/profile?mode=sendpassword">Quên mật khẩu?</a></p>
+		</div>
+		<div class="log-item">
+			<input type="submit" name="login" value="Đăng Nhập Ngay" />
+			<script type="text/javascript">
+			document.write('<input type="hidden" name="redirect" value="' + location.href + '" />')
+			</script>
+		</div>
+		<p class="center">Chưa có tài khoản. <strong><a href="/register">Đăng ký ngay!</a></strong></p>
+	</div>
+</form>
+<script type="text/javascript" src="/13030.js"></script>
+<!-- END switch_user_logged_out -->
+<div class="footer-link">
+  <p>© Copyright <strong><a target="_blank" href="https://vc-mp.vn/">BK SERVER</a></strong> All Rights Reserved | BKs - Vice City Online Viet Nam</p>
+	<div class="footer-about clearfix">
+		<ul>
+			<li>
+<!-- BEGIN html_validation -->
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- END html_validation -->

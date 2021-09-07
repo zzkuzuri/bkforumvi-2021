@@ -1,0 +1,44 @@
+<div class="paged-head clearfix">
+	<p class="paging">{PAGINATION}</p>
+</div>
+
+<div class="main">
+	<form name="manage" action="{S_MODCP_ACTION}" method="post" class="frm-form">
+
+		<div class="main-head">
+			<h1 class="page-title">Quản lý bài viết</h1>
+		</div>
+		<div class="main-content">
+			<ul class="list-main">
+				<!-- BEGIN topicrow -->
+				<li class="table list-content" data="{topicrow.TOPIC_TYPE}">
+					<div class="table-cell list-icon"><i class="fa fa-comment-o"></i></div>
+					<div class="table-cell list-info">
+						<div class="list-name"><a class="topictitle" href="{topicrow.U_VIEW_TOPIC}">{topicrow.TOPIC_TITLE}</a></div>
+						<div class="list-author">Trả lời: {topicrow.REPLIES}</div>
+					</div>
+					<div class="table-cell list-last">
+						<input type="checkbox" name="topic_id_list[]" value="{topicrow.TOPIC_ID}" /><br />
+						<span class="timez">{topicrow.LAST_POST_TIME}</span>
+					</div>
+				</li>
+				<!-- END topicrow -->
+			</ul>
+			<p class="center" style="padding:10px 0;margin-top:10px;border-top:1px solid #464646"><a href="#" onclick="this.value=check('select','manage');return false;">{L_SELECT_ALL}</a>&nbsp;::&nbsp;<a href="#" onclick="this.value=check('unselect','manage');return false;">{L_USELECT_ALL}</a></p>
+			<div class="frm-buttons">
+				{S_HIDDEN_FIELDS}
+				<input type="submit" name="delete" value="{L_DELETE}" />&nbsp;
+				<input type="submit" name="move" value="{L_MOVE}" />&nbsp;
+				<input type="submit" name="lock" value="{L_LOCK}" />&nbsp;
+				<input type="submit" name="unlock" value="{L_UNLOCK}" />&nbsp;
+				<!-- BEGIN switch_sticky --><input type="submit" name="sticky" value="VIP 1" />&nbsp;<!-- END switch_sticky -->
+				<!-- BEGIN switch_announce --><input type="submit" name="announce" value="VIP 2" />&nbsp;<!-- END switch_announce -->
+				<!-- BEGIN switch_normal --><input type="submit" name="normal" value="{L_NORMAL}" /><!-- END switch_normal -->
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="paged-foot clearfix">
+	<p class="paging">{PAGINATION}</p>
+</div>

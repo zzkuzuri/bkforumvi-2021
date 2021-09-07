@@ -1,0 +1,62 @@
+<style type="text/css">
+.pf-main{border:1px solid #464646;margin:0 0 20px;background:#2d2d2d}
+.pf-head{background:#323232;padding:10px;text-align:center;border-bottom:1px solid #464646}
+.pf-head strong{font-size:16px}
+.pf-ava{border:1px solid #464646;background:#323232;width:150px;height:150px;margin:0 auto;padding:5px;text-align:center}
+.pf-ava img{max-width:100%!important;max-height:100%!important}
+.pf-menu{border-bottom:1px solid #464646;background:#323232}
+.pf-menu li{width:33.33%;text-align:center;position:relative;display:inline-block}
+.pf-menu li.active:before,.pf-menu li.active:after{border-width:0 8px 8px 8px;right:50%;margin-right:-8px;position:absolute;border-style:solid;content:" "}
+.pf-menu li.active:before{bottom:0;border-color:transparent transparent #464646;z-index:10}
+.pf-menu li.active:after{bottom:-2px;z-index:20;border-color:transparent transparent #2d2d2d}
+.pf-menu li.active a{color:#3498db}
+.pf-menu li a{display:block;height:35px;line-height:35px;font-weight:700;color:#fff}
+.pf-content{padding:10px}
+.pf-content dl{height:35px;line-height:35px;overflow:hidden}
+.pf-content dt{float:left;padding-right:5px}
+.pf-content dd{float:right;font-weight:700}
+</style>
+<div class="col-left left">
+	<div class="pf-main">
+		<div class="pf-head">
+			<p>{USERNAME}</p>
+			<p>{POSTER_RANK}</p>
+		</div>
+		<div class="pf-content">
+			<div class="pf-ava">{AVATAR_IMG}</div>
+		</div>
+	</div>
+</div>
+<div class="side-col right">
+	<div class="col-right">
+		<div class="pf-main">
+			<div class="pf-menu">
+				<ul>
+					<li class="active"><a href="">Tường nhà</a></li>
+					<li><a href="/sta/{PUSERNAME}">Chủ đề</a></li>
+					<li><a href="/spa/{PUSERNAME}">Bài viết</a></li>
+				</ul>
+			</div>
+			<div class="pf-content">
+				<!-- BEGIN profile_field -->
+				<dl id="field_id{profile_field.ID}" class="left-box details" style="border-bottom:1px dashed #464646">
+					<dt>{profile_field.LABEL}</dt>
+					<dd>{profile_field.CONTENT}</dd>
+				</dl>
+				<!-- END profile_field -->
+				<dl style="border-bottom:1px dashed #464646">
+					<dt>Chức vụ :</dt>
+					<dd>{POSTER_RANK}</dd>
+				</dl>
+				<dl style="border-bottom:1px dashed #464646">
+					<dt>Trạng thái :</dt>
+					<dd>{USER_ONLINE}</dd>
+				</dl>
+				<dl>
+					<dt>Truy cập :</dt>
+					<dd><span class="timez">{LAST_VISIT_TIME}</span></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>

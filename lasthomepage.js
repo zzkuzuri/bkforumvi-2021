@@ -1,0 +1,1 @@
+$(function(){$(".reload-last").click(function(){$(".loading").fadeIn(200);$(".last-itemt").load("/forum .last-topic ol",function(){$(".last-topic").empty();$(this).appendTo(".last-topic");$(".loading").fadeOut(1000)})})});

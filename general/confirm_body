@@ -1,0 +1,16 @@
+<div class="main">
+	<div class="main-head"><h1 class="page-title">{MESSAGE_TITLE}</h1></div>
+	<div class="main-content">
+		<form action="{S_CONFIRM_ACTION}" method="post" class="frm-form">
+			<p class="frm-info">{MESSAGE_TEXT}</p>
+			{OPTIONAL_BAN_NEW}
+			<fieldset class="frm-set">
+				<div class="frm-buttons">
+					{S_HIDDEN_FIELDS}
+					<input type="submit" name="confirm" value="Đồng ý" />&nbsp;
+					<input type="submit" name="cancel" value="{L_NO}" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>

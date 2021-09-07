@@ -1,0 +1,20 @@
+{BOARD_INDEX}
+
+<div class="paged-head clearfix">
+	<p class="paging">{PAGINATION}</p>
+	<p class="posting right"><a class="click-login button" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow">Đăng bài mới</a></p>
+</div>
+
+<div class="main paged">
+	{TOPICS_LIST_BOX}
+</div>
+
+<div class="paged-foot clearfix">
+	<p class="paging">{PAGINATION}</p>
+	<p class="posting right"><a class="click-login button" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow">Đăng bài mới</a></p>
+</div>
+
+<div class="main">
+	<div class="main-head">Quyền hạn của bạn</div>
+	<div class="main-content" style="line-height:1.5">{S_AUTH_LIST}</div>
+</div>

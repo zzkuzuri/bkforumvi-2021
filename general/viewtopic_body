@@ -1,0 +1,143 @@
+<script type="text/javascript">//<![CDATA[
+var multiquote_img_off = '{JS_MULTIQUOTE_IMG_OFF}', multiquote_img_on = '{JS_MULTIQUOTE_IMG_ON}', _atr = '{JS_DIR}addthis/', _ati = '{PATH_IMG_FA}addthis/'{ADDTHIS_LANG}, addthis_localize = { share_caption: "{L_SHARE_CAPTION}", email: "{L_EMAIL}", email_caption: "{L_EMAIL_CAPTION}", favorites: "{L_SHARE_BOOKMARKS}", print: "{L_PRINT}", more: "{L_MORE}" };
+    $(function(){
+        if(typeof(_atc) == "undefined") {
+            _atc = {  };
+        }
+    });
+
+var hiddenMsgLabel = { visible:'{JS_HIDE_HIDDEN_MESSAGE}', hidden:'{JS_SHOW_HIDDEN_MESSAGE}' };
+showHiddenMessage = function(id)
+{
+    try
+    {
+        var regId = parseInt(id, 10);
+        if( isNaN(regId) ) { regId = 0; }
+        
+        if( regId > 0)
+        {
+            $('.post--' + id).toggle(0, function()
+			{
+				if( $(this).is(":visible") )
+				{
+					$('#hidden-title--' + id).html(hiddenMsgLabel.visible);
+				}
+				else
+				{
+					$('#hidden-title--' + id).html(hiddenMsgLabel.hidden);
+				}
+			});
+        }
+    }
+    catch(e) { }
+    
+	return false;
+};
+
+//]]>
+</script>
+      
+<div class="paged-head clearfix">
+	<div class="topic-info">
+		<h1 class="topic-title">{TOPIC_TITLE}</h1>
+		<p class="dang-tai">Đăng tại chuyên mục <strong><a href="f{FORUM_ID}-forum">{FORUM_NAME}</a></strong></p>
+		<!-- BEGIN topicpagination -->
+		<p class="paging">{PAGINATION}</p>
+		<!-- END topicpagination -->
+	</div>
+</div>
+
+
+	<div class="topic-content">
+		<!-- BEGIN postrow -->
+			<!-- BEGIN hidden -->
+				<p class="p-hidden">{postrow.hidden.MESSAGE}</p>
+			<!-- END hidden -->
+			
+			<!-- BEGIN displayed -->
+			<a name="{postrow.displayed.U_POST_ID}" id="{postrow.displayed.U_POST_ID}"></a>
+			<div class="post post--{postrow.displayed.U_POST_ID} clearfix">
+				<span class="user-status{postrow.displayed.ONLINE_IMG_NEW}">
+					<span class="user-online"></span>
+				</span>
+				<div class="user clearfix">
+					<div class="user-avatar">
+						{postrow.displayed.POSTER_AVATAR}
+					</div>
+					<div class="user-text">
+						<div class="user-name">{postrow.displayed.POSTER_NAME}</div>
+						<div class="user-rank">{postrow.displayed.POSTER_RANK_NEW}</div>
+					</div>
+					<div class="show-info">
+						<i class="fa fa-angle-down"></i>
+					</div>
+					<div class="user-info">
+						<!-- BEGIN profile_field -->
+						<div class="user-itemt clearfix">
+							<div class="left">{postrow.displayed.profile_field.LABEL}</div>
+							<div class="right" style="font-weight:700">{postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}</div>
+						</div>
+						<!-- END profile_field -->
+						{postrow.displayed.POSTER_RPG}
+					</div>
+				</div>
+                          
+				<div class="postmain">
+					<div class="postbody">
+						<div class="post-entry">
+							<div class="entry-content">
+								<div>
+									<div>{postrow.displayed.MESSAGE}</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="postfoot">
+							<div class="time-post">
+								<span class="timez">{postrow.displayed.POST_DATE_NEW}</span>
+								<a class="postid right" href="#{postrow.displayed.U_POST_ID}" style="color:#999">#{postrow.displayed.COUNT_POSTS}</a>
+							</div>
+							<div class="post-options profile_{postrow.displayed.PROFILE_POSITION}">
+								{postrow.displayed.QUOTE_IMG}{postrow.displayed.EDIT_IMG}{postrow.displayed.DELETE_IMG}{postrow.displayed.IP_IMG}<a href="#">Báo cáo</a>
+							</div>
+						</div>  
+					</div>
+				</div>
+			</div>
+			<!-- BEGIN first_post_br -->
+			</div>
+			<hr id="first-post-br" />
+			<div class="main-content topic">
+			<!-- END first_post_br -->
+			<!-- END displayed -->
+		<!-- END postrow -->
+	</div>
+
+	<a name="bottomtitle"></a>
+
+	<div class="paged-foot clearfix">
+		<!-- BEGIN topicpagination -->
+			<p class="paging left">{PAGINATION}</p>
+		<!-- END topicpagination -->
+		<!-- BEGIN viewtopic_bottom -->
+		<form method="get" action="{S_FORM_MOD_ACTION}">
+			<fieldset class="quickmod right" style="margin:0 0 20px">
+				<input type="hidden" name="t" value="{TOPIC_ID}" />
+				<!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
+				<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
+				{S_SELECT_MOD}
+			</fieldset>
+		</form>
+		<!-- END viewtopic_bottom -->
+	</div>
+
+
+<!-- BEGIN switch_user_logged_in -->
+<a name="quickreply"></a>
+{QUICK_REPLY_FORM}
+<!-- END switch_user_logged_in -->
+
+<div class="main">
+	<div class="main-head">Quyền hạn của bạn</div>
+	<div class="main-content" style="line-height:1.5">{S_AUTH_LIST}</div>
+</div>

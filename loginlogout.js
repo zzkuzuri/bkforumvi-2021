@@ -1,0 +1,1 @@
+$(function(){$('a[href*="/login"],.click-login').click(function(event){event.preventDefault();$(".log-pop,.overlay").fadeIn(200);$(".logreg-name").focus()});$(".log-title .fa, .overlay").click(function(){$(".log-pop,.overlay").fadeOut(200)});$("input#username_reg").attr("maxlength","16")});
